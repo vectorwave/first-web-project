@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<s lang="en">
+
+	<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Please Login</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+	rel="stylesheet">
+	</head>
+
+	<style>
+input {
+	background-color: transparent;
+	font-size: 20px;
+	color: black;
+	width: 200px;
+	height: 30PX;
+	box-shadow: 3px 3px 8px black;
+}
+
+.inputBox {
+	font-family: 'Acme', sans-serif;
+}
+
+.submitB {
+	background-color: transparent;
+	margin-left: 50px;
+	font-size: 15px;
+	font-weight: 400;
+	width: 65px;
+	height: 30PX;
+	box-shadow: 3px 3px 8px black;
+	font-family: 'Acme', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+.banner h2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 25vw;
+	text-align: center;
+	line-height: 100vh;
+	/* 字全大寫 */
+	text-transform: uppercase;
+	background-color: gray;
+	mix-blend-mode: screen;
+	font-family: 'Permanent Marker', cursive;
+}
+</style>
+
+	<body>
+
+		<div class="wrap">
+			<div class="banner">
+				<video autoplay muted loop>
+					<source src='Background/Cover.mp4' type='video/mp4'>
+				</video>
+				<h2>TRAVEL</h2>
+
+				<div style="z-index: 9999; position: relative; margin-top: 650px;">
+					<form method="post" action="../Login">
+						<input class="inputBox" type="text" name="userId" id="account"
+							placeholder=" Account..."><input class="inputBox"
+							type="password" name="password" id="password"
+							placeholder=" Password..." style="margin-left: 50px">
+						<button type="submit" class="submitB">Submit</button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+
+
+	</body>
+
+	</html>
